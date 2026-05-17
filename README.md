@@ -1,41 +1,49 @@
-# PUP eMabini LMS Static Prototype
+# eMabini Homepage Prototype
 
-This is a simple static HTML/CSS/JavaScript prototype for testing homepage improvements for the PUP eMabini LMS.
+A static prototype for reviewing possible improvements to the eMabini LMS landing page.
 
-## Files
+The page focuses on a lighter layout, clearer navigation, and faster access to common user actions such as logging in, viewing tutorials, reading FAQs, and contacting support.
 
-- `index.html` - main webpage
-- `styles.css` - visual design and responsive layout
-- `script.js` - menu, tutorial search/filter, and FAQ accordion
-- `.nojekyll` - disables Jekyll processing on GitHub Pages
+## Project Files
 
-## How to upload to GitHub
+```text
+index.html
+styles.css
+script.js
+.nojekyll
+```
+
+## Preview Locally
+
+Open `index.html` in a browser.
+
+No installation is required.
+
+## Publish on GitHub Pages
 
 1. Create a new GitHub repository.
-2. Upload these files directly to the root of the repository:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `.nojekyll`
-3. Commit the files.
-4. Go to **Settings**.
+2. Upload the project files to the main folder of the repository.
+3. Commit the changes.
+4. Open the repository settings.
 5. Go to **Pages**.
-6. Under **Build and deployment**, select:
-   - Source: `Deploy from a branch`
+6. Set the source to:
    - Branch: `main`
    - Folder: `/root`
-7. Save.
-8. GitHub will publish the site at a URL similar to:
-   `https://your-username.github.io/your-repository-name/`
+7. Save the settings.
 
-## Notes for testing
+After GitHub finishes publishing, the site will be available through the repository’s GitHub Pages link.
 
-This prototype intentionally avoids:
+## Purpose
 
-- large homepage image sliders
-- external icon libraries
-- external fonts
-- video embeds on first load
-- heavy frameworks
+This prototype is intended for layout and performance review. It removes heavy homepage elements and keeps the first page focused on the most important user needs:
 
-This makes it useful for testing faster perceived loading and clearer navigation.
+- LMS login
+- Student, faculty, and admin tutorials
+- FAQ section
+- OUSphere links
+- Support information
+- Mobile-friendly viewing
+
+## Notes
+
+The current version uses plain HTML, CSS, and JavaScript only. It does not use external frameworks, hosted fonts, or embedded videos on the initial page load.
