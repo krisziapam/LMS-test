@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fast static prototype for the PUP eMabini LMS homepage improvement test." />
+  <title>PUP eMabini LMS Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="PUP eMabini Prototype home">
+        <span class="brand-mark">e</span>
+        <span>
+          <strong>PUP eMabini</strong>
+          <small>Learning Management Portal</small>
+        </span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        Menu
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#newsletter">OUSphere</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+        <a class="nav-login" href="#login">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow-row">
+            <span>Fast static prototype</span>
+            <span>Moodle-ready structure</span>
+          </div>
+          <h1>A cleaner, faster gateway to PUP online learning.</h1>
+          <p>
+            This prototype removes the heavy homepage image slider and prioritizes
+            clear access to login, tutorials, FAQs, mobile use, and support.
+          </p>
+          <div class="hero-actions" id="login">
+            <a class="button button-primary" href="#">Log in to LMS</a>
+            <a class="button button-secondary" href="#tutorials">Watch quick tutorial</a>
+          </div>
+        </div>
+
+        <aside class="dashboard-card" aria-label="Student dashboard preview">
+          <div class="dashboard-top">
+            <p>Student Dashboard Preview</p>
+            <h2>Welcome back, Iskolar ng Bayan</h2>
+            <span>Continue learning faster with fewer homepage distractions.</span>
+          </div>
+          <div class="dashboard-grid">
+            <article>
+              <strong>My Courses</strong>
+              <span>4 active</span>
+            </article>
+            <article>
+              <strong>Site News</strong>
+              <span>No new posts</span>
+            </article>
+            <article>
+              <strong>Mobile Ready</strong>
+              <span>Responsive</span>
+            </article>
+            <article>
+              <strong>Support</strong>
+              <span>FAQ + contact</span>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p>Why this version is faster</p>
+          <h2>Built to reduce waiting and guide users immediately</h2>
+          <span>
+            Instead of large image carousels, this version uses CSS, text, and simple cards
+            so the first page can load faster.
+          </span>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon">🌐</span>
+            <h3>Global</h3>
+            <p>Highlights open and distance learning without depending on oversized graphics.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon">📱</span>
+            <h3>Mobile Friendly</h3>
+            <p>Designed first for students who access LMS from phones and tablets.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon">📚</span>
+            <h3>Virtual Learning</h3>
+            <p>Clear links to courses, tutorials, resources, and LMS support.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon">💼</span>
+            <h3>Learn and Work</h3>
+            <p>Keeps flexible learning messaging visible without slowing the page.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="tutorials">
+      <div class="container">
+        <div class="section-heading">
+          <p>Video tutorials</p>
+          <h2>Find the right LMS guide faster</h2>
+          <span>
+            Tutorials are searchable and grouped by role so students, faculty, and administrators
+            do not need to scan a long list.
+          </span>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-box">
+            <span>Search tutorials</span>
+            <input id="tutorialSearch" type="search" placeholder="Try quiz, mobile, user, gradebook..." />
+          </label>
+
+          <div class="filter-buttons" aria-label="Tutorial role filters">
+            <button class="filter active" data-role="All">All</button>
+            <button class="filter" data-role="Student">Student</button>
+            <button class="filter" data-role="Faculty">Faculty</button>
+            <button class="filter" data-role="Admin">Admin</button>
+          </div>
+        </div>
+
+        <div class="tutorial-grid" id="tutorialGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="newsletter">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">OUSphere</p>
+          <h2>Newsletter archive without the long-scroll problem</h2>
+          <p>
+            The original homepage contains many newsletter links across several years.
+            This prototype keeps the archive available in a compact, scannable layout.
+          </p>
+          <a class="button button-dark" href="#">View all issues</a>
+        </div>
+
+        <div class="archive-card">
+          <div class="archive-header">
+            <h3>Recent Issues</h3>
+            <span>Compact view</span>
+          </div>
+          <div class="archive-list">
+            <a href="#">OU Sphere Anniversary Issue 2024</a>
+            <a href="#">January to March Issue 2024</a>
+            <a href="#">April to June Issue 2024</a>
+            <a href="#">OU Sphere Anniversary Issue 2023</a>
+            <a href="#">January to March Issue 2023</a>
+            <a href="#">April to June Issue 2023</a>
+            <a href="#">July to September Issue 2023</a>
+            <a href="#">October to December Issue 2023</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="faq">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p>FAQ</p>
+          <h2>Login help made easier to scan</h2>
+          <span>
+            Important access instructions are grouped into accordions instead of one long block of text.
+          </span>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <article class="faq-item open">
+            <button>How do I access the PUP eMabini LMS Portal?</button>
+            <div>
+              <p>Go to the eMabini LMS portal, select Log in, then enter your assigned student or faculty credentials.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button>What is my username?</button>
+            <div>
+              <p>For students, use your student number. For faculty, use your assigned faculty number.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button>What is the default password?</button>
+            <div>
+              <p>Use the temporary password provided by the University, then update it immediately after logging in.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button>I forgot my password. What should I do?</button>
+            <div>
+              <p>Use Forgot Password on the login page. If no email arrives, contact eMabini support through official channels.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="container">
+        <div class="support-card">
+          <div>
+            <p class="section-kicker">Support</p>
+            <h2>Need help accessing your LMS account?</h2>
+            <p>
+              Put support options near the login path so users do not need to scroll through the
+              full homepage when they only need account assistance.
+            </p>
+
+            <div class="support-grid">
+              <article>
+                <strong>Email Support</strong>
+                <span>emabini.support@pup.edu.ph</span>
+              </article>
+              <article>
+                <strong>Phone</strong>
+                <span>5335-1787 local 203</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="test-notes">
+            <h3>Performance test notes</h3>
+            <ul>
+              <li>Remove heavy image carousel from first load.</li>
+              <li>Lazy-load tutorial videos and newsletter media.</li>
+              <li>Use compressed WebP or AVIF images only when needed.</li>
+              <li>Keep login, FAQ, and support visible near the top.</li>
+              <li>Cache Moodle static assets and optimize file delivery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Prototype for PUP eMabini LMS homepage improvement testing.</p>
+      <nav aria-label="Footer navigation">
+        <a href="#">Privacy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
